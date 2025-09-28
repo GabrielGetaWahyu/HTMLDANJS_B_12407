@@ -17,8 +17,21 @@
   <form onsubmit="return validateForm()">
     <table cellspacing="4" cellpadding="4">
       <!-- TODO: Tambahkan field input teks untuk Nama Mahasiswa dengan tipe teks dan WAJIB DIISI. -->
+       <tr>
+        <td><strong>Nama Mahasiswa</strong></td>
+        <td><input required type="text" id="namamhs" name="namamahasiswa" size="30" /></td>
+      </tr>
 
       <!-- TODO: Tambahkan field radio button untuk Jenis Kelamin (Laki-laki dan Perempuan) dan WAJIB DIISI -->
+        <tr>
+          <td><strong>Jenis Kelamin</strong></td>
+          <td>
+            <input required type="radio" id="laki" name="jk" value="Laki-laki" />
+            <label for="lk">Laki-laki</label>
+            <input required type="radio" id="perempuan" name="jk" value="Perempuan" />
+            <label for="pr">Perempuan</label>
+          </td>
+        </tr>
 
       <!-- TODO: Tambahkan dropdown untuk Program Studi dengan id="prodi", 
            opsi: "Pilih Prodi", "Informatika", "Teknik Industri", "Sistem Informasi" dan WAJIB DIISI. -->
