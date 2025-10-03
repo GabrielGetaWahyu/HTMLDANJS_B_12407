@@ -96,16 +96,16 @@
 
   if (angka === "") {
     output.innerHTML = "Masukkan angka terlebih dahulu.";
-  } else {
-
-    if (angka % 2 !== 0) {
+  }else if (angka % 2 !== 0) {
       output.innerHTML = "Masukkan hanya angka genap.";
     } else {
       let kuadrat = angka * angka;
       output.innerHTML = "Hasil kuadrat dari " + angka + " adalah " + kuadrat;
     }
   }
-}
+
+    
+
   </script>
 </body>
 </html>
